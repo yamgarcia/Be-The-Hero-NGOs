@@ -1,4 +1,7 @@
 const express = require("express");
+const crypto = require("crypto");
+const connection = require("./database/connection");
+const ngocontroller = require("./controllers/NGOsControllers");
 
 const routes = express.Router();
 
@@ -20,15 +23,7 @@ const routes = express.Router();
  *   Request body: used to create or change resources
  */
 
-routes.post("/ngos", (req, res) => {
-  //   return res.send("hello worlds");
-
-  // const params = req.querry; // access querry params. users?name=Marcos
-  // const params = req.params; // access route params. users/1 when app.get("/users/:id")
-  const data = req.body; // access body params. users/1 when app.get("/users/:id")
-  console.log(data);
-
-  return res.json({});
-});
+routes.post("/ngos", ngocontroller.create);
+routes.get("/ngos", ngocontroller.index);
 
 module.exports = routes;
