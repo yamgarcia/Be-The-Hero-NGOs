@@ -5,10 +5,10 @@ const routes = express.Router();
 /**
  * HTTP Methods:
  *
- * GET: Search/list an information on the backend
- * POST: Create an information on the backend
- * PUT: Change an information on the backend
- * DELETE: Delete an information on the backend
+ * GET: Search/list information on the backend
+ * POST: Create information on the backend
+ * PUT: Change information on the backend
+ * DELETE: Delete information on the backend
  */
 
 /**
@@ -20,19 +20,15 @@ const routes = express.Router();
  *   Request body: used to create or change resources
  */
 
-routes.post("/users", (req, res) => {
+routes.post("/ngos", (req, res) => {
   //   return res.send("hello worlds");
 
   // const params = req.querry; // access querry params. users?name=Marcos
   // const params = req.params; // access route params. users/1 when app.get("/users/:id")
-  const params = req.body; // access body params. users/1 when app.get("/users/:id")
-  console.log(params);
+  const data = req.body; // access body params. users/1 when app.get("/users/:id")
+  console.log(data);
 
-  return res.json({
-    event: "Oministack week",
-    student: "Marcos Garcia",
-    age: 26
-  });
+  return res.json({});
 });
 
 module.exports = routes;
