@@ -2,9 +2,7 @@ import React from "react";
 import "./styles.css";
 
 import { Link } from "react-router-dom";
-
 import logoImg from "../../assets/logo.svg";
-
 import { FiArrowLeft } from "react-icons/fi";
 
 const Register = () => {
