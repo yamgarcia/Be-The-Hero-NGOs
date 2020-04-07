@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 import logoImg from "../../assets/logo.svg";
 
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 import { FiPower, FiTrash2 } from "react-icons/fi";
 import "./styles.css";
@@ -12,6 +12,7 @@ import api from "../../services/api";
 const Profile = () => {
   const ngoName = localStorage.getItem("ngoName");
   const ngoId = localStorage.getItem("ngoId");
+  const history = useHistory();
   const [incidents, setIncidents] = useState([]);
 
   useEffect(() => {
@@ -41,6 +42,11 @@ const Profile = () => {
     }
   }
 
+  function handleLogout() {
+    localStorage.clear();
+    history.push("/");
+  }
+
   return (
     <div className='profile-container'>
       <header>
@@ -50,7 +56,7 @@ const Profile = () => {
         <Link className='button' to='incidents/new'>
           Report an incident
         </Link>
-        <button type='button'>
+        <button onClick={handleLogout} name='Logout' type='button'>
           <FiPower size={18} color='#E02041' />
         </button>
       </header>
@@ -74,6 +80,7 @@ const Profile = () => {
             </p>
 
             <button
+              name='delete'
               onClick={() => handleDeleteIncident(incident.id)}
               type='button'
             >

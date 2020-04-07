@@ -1,11 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.css";
 
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import logoImg from "../../assets/logo.svg";
 import { FiArrowLeft } from "react-icons/fi";
 
+import api from "../../services/api";
+
 const NewIncident = () => {
+  const [title, setTitle] = useState("");
+  const [description, setDescription] = useState("");
+  const [value, setValue] = useState("");
+  const ngoId = localStorage.getItem("ngoId");
+  const history = useHistory();
+
+  async function handleAddIncident(e) {
+    e.preventDefault();
+    const data = {
+      title,
+      description,
+      value
+    };
+
+    try {
+      await api.post("incidents", data, {
+        headers: {
+          Authorization: ngoId
+        }
+      });
+      history.push("/profile");
+    } catch (e) {
+      alert("Error, could not submit incident");
+      console.error(e.message);
+    }
+  }
+
   return (
     <div className='new-incident-container'>
       <div className='content'>
@@ -18,10 +47,22 @@ const NewIncident = () => {
             Back to Home
           </Link>
         </section>
-        <form>
-          <input placeholder='Give it a title' />
-          <textarea placeholder='Description' />
-          <input placeholder='Value in CAD' />
+        <form onSubmit={handleAddIncident}>
+          <input
+            value={title}
+            onChange={e => setTitle(e.target.value)}
+            placeholder='Give it a title'
+          />
+          <textarea
+            value={description}
+            onChange={e => setDescription(e.target.value)}
+            placeholder='Description'
+          />
+          <input
+            value={value}
+            onChange={e => setValue(e.target.value)}
+            placeholder='Value in CAD'
+          />
 
           <button className='button' type='submit'>
             Report
