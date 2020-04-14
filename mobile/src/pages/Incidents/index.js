@@ -1,7 +1,8 @@
 import React from "react";
-import { View, FlatList, Text, Image, TouchableOpacity } from "react-native";
 import logoImg from "../../assets/logo.png";
 import styles from "./styles";
+
+import { View, FlatList, Text, Image, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
 import { Feather } from "@expo/vector-icons";
 
