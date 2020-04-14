@@ -37,9 +37,9 @@ const Detail = () => {
         <Text style={styles.heroTitle}>Save the day!</Text>
         <Text style={styles.heroTitle}>Be the hero of this case.</Text>
 
-        <Text style={styles.heroDescription}>Contact:</Text>
+        <Text style={styles.heroDescription}>Get in touch:</Text>
 
-        <View styles={styles.actions}>
+        <View style={styles.actions}>
           <TouchableOpacity style={styles.action} onPress={navigateBack}>
             <Text style={styles.actionText}>Phone</Text>
           </TouchableOpacity>
