@@ -5,13 +5,24 @@ import styles from "./styles";
 import { Feather } from "@expo/vector-icons";
 import { View, Image, Text, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
+import * as MailComposer from "expo-mail-composer";
 
 const Detail = () => {
   const navigation = useNavigation();
+  // const message = `Hello APAD, I'd like to help on the case "Ran over dog" with cost $120,00.`;
 
   const navigateBack = () => {
     navigation.goBack();
   };
+
+  // const sendMail = () => {
+  //   MailComposer.composeAsync({
+  //     subject: "Incident: Ran over dog",
+  //     recipients: ["yamgarcia.ca@gmail.com"],
+  //     body: message,
+  //   });
+  // };
+  // const sendWhatsapp = () => {};
 
   return (
     <View style={styles.container}>
