@@ -5,7 +5,7 @@ import styles from "./styles";
 import { Feather } from "@expo/vector-icons";
 import { View, Image, Text, TouchableOpacity } from "react-native";
 import { useNavigation } from "@react-navigation/native";
-import * as MailComposer from "expo-mail-composer";
+// import * as MailComposer from "expo-mail-composer";
 
 const Detail = () => {
   const navigation = useNavigation();
