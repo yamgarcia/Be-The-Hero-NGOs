@@ -1,18 +1,44 @@
-import React from "react";
+import { Feather } from "@expo/vector-icons";
+import React, { useEffect, useState } from "react";
+import { useNavigation } from "@react-navigation/native";
+import { View, FlatList, Text, Image, TouchableOpacity } from "react-native";
+
 import logoImg from "../../assets/logo.png";
 import styles from "./styles";
-
-import { View, FlatList, Text, Image, TouchableOpacity } from "react-native";
-import { useNavigation } from "@react-navigation/native";
-import { Feather } from "@expo/vector-icons";
+import api from "../../services/api";
 
 const Incidents = () => {
+  const [incidents, setIncidents] = useState([1, 2]);
+  const [loading, setLoading] = useState(true);
   const navigation = useNavigation();
+  const loadingM = "Loading...";
 
   function navigateToDetail() {
     //Detail is the route name
     navigation.navigate("Detail");
   }
+  /**
+   * @GET route incidents
+   */
+  async function loadIncidents() {
+    try {
+      const response = await api.get("incidents");
+      const theData = response.data;
+      console.log("-----////////////////////////-----");
+      console.log(theData);
+      setIncidents(theData);
+      console.log(" ------------incidents array-------- ");
+      console.log(incidents);
+      console.log(" ------------incidents array end-------- ");
+      setLoading(false);
+    } catch (e) {
+      console.error(e.message);
+    }
+  }
+
+  useEffect(() => {
+    loadIncidents();
+  }, []);
 
   return (
     <View style={styles.container}>
@@ -28,32 +54,42 @@ const Incidents = () => {
         Choose one of the cases below to save the day!
       </Text>
 
-      <FlatList
-        style={styles.incidentList}
-        data={[1, 2, 3, 4, 5]}
-        keyExtractor={(incident) => String(incident)}
-        showsVerticalScrollIndicator={false}
-        renderItem={() => (
-          <View style={styles.incident}>
-            <Text style={styles.incidentProperty}>NGO:</Text>
-            <Text style={styles.incidentValue}>Apade</Text>
+      {loading ? (
+        <View style={styles.incident}>
+          <Text style={styles.description}>{loadingM}</Text>
+        </View>
+      ) : (
+        <View style={styles.incident}>
+          <Text style={styles.description}>LOADED</Text>
+        </View>
 
-            <Text style={styles.incidentProperty}>Case:</Text>
-            <Text style={styles.incidentValue}>Ran over dog</Text>
+        // <FlatList
+        //   data={incidents}
+        //   style={styles.incidentList}
+        //   keyExtractor={(incident) => String(incident.id)}
+        //   showsVerticalScrollIndicator={false}
+        //   renderItem={({ item: incident }) => (
+        //     <View style={styles.incident}>
+        //       <Text style={styles.incidentProperty}>NGO:</Text>
+        //       <Text style={styles.incidentValue}>{incident.name}</Text>
 
-            <Text style={styles.incidentProperty}>Value:</Text>
-            <Text style={styles.incidentValue}>$150</Text>
+        //       <Text style={styles.incidentProperty}>Case:</Text>
+        //       <Text style={styles.incidentValue}>{incident.title}</Text>
 
-            <TouchableOpacity
-              style={styles.detailsButton}
-              onPress={navigateToDetail}
-            >
-              <Text style={styles.detailsButtonText}>See more Details</Text>
-              <Feather name={"arrow-right"} size={17} color={"#E02041"} />
-            </TouchableOpacity>
-          </View>
-        )}
-      />
+        //       <Text style={styles.incidentProperty}>Value:</Text>
+        //       <Text style={styles.incidentValue}>{incident.value}</Text>
+
+        //       <TouchableOpacity
+        //         style={styles.detailsButton}
+        //         onPress={navigateToDetail}
+        //       >
+        //         <Text style={styles.detailsButtonText}>See more Details</Text>
+        //         <Feather name={"arrow-right"} size={17} color={"#E02041"} />
+        //       </TouchableOpacity>
+        //     </View>
+        //   )}
+        // />
+      )}
     </View>
   );
 };
