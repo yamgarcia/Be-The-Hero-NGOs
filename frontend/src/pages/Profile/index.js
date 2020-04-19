@@ -19,10 +19,10 @@ const Profile = () => {
     api
       .get("profile", {
         headers: {
-          Authorization: ngoId
-        }
+          Authorization: ngoId,
+        },
       })
-      .then(res => {
+      .then((res) => {
         setIncidents(res.data);
       });
   }, [ngoId]);
@@ -31,11 +31,11 @@ const Profile = () => {
     try {
       await api.delete(`incidents/${id}`, {
         headers: {
-          Authorization: ngoId
-        }
+          Authorization: ngoId,
+        },
       });
 
-      setIncidents(incidents.filter(incidents => incidents.id !== id));
+      setIncidents(incidents.filter((incidents) => incidents.id !== id));
     } catch (error) {
       alert("Error, try again");
       console.error(error.message);
@@ -63,7 +63,7 @@ const Profile = () => {
 
       <h1>Reported Incidents</h1>
       <ul>
-        {incidents.map(incident => (
+        {incidents.map((incident) => (
           <li key={incident.id}>
             <strong>Incident:</strong>
             <p>{incident.title}</p>
@@ -75,7 +75,7 @@ const Profile = () => {
             <p>
               {Intl.NumberFormat("en-CA", {
                 style: "currency",
-                currency: "CAD"
+                currency: "CAD",
               }).format(incident.value)}
             </p>
 
