@@ -37,11 +37,13 @@ The following project was made
 
 Non-governmental organizations (NGOs) are neither a part of a government nor a conventional for-profit business. Usually set up by ordinary citizens, an NGO may be funded by governments, foundations, businesses, or private persons. The existence of NGOs is proving to be a necessity rather than a luxury in societies throughout the modern world, they promote vary sorts of causes like <b>human-rights</b>, <b>animal-rights</b>, <b>the rights of the first nations</b>, <b>fight against racism</b>, <b>environment</b>, <b>urban issues</b>, <b>immigrants</b>, and [others](https://lifeatlakshyam.wordpress.com/2015/10/30/why-do-we-need-ngos/).
 
-### 🙋🏽‍♂️ Author considerations
+### 🙋🏽‍♂️ Author's considerations
 
 The project was a great challange filled with the most current technologies in webdesign. For beign a whole fulltack project, despite the mobile section, the comcepts of backend and frontend integration, REST api, Database connection, among others had to be introduced. Thankfully the classes [COMP 2912 - Node.js](https://www.bcit.ca/study/courses/comp2912) and [COMP 1630 - Relational Database Design and SQL](https://www.bcit.ca/study/courses/comp1630) were permeated with knowledge and useful thoughts from experienced professionals.
+
 The use of react was also fairly important due it's demand nowadays, and the amount of tools that can be used with it. 
 After finishing [COMP 2913 - React and Modern JavaScript](https://www.bcit.ca/study/courses/comp2913) at BCIT I was convinced that the future of frontend was in react, thanks to the usage that can be given the it and the ease of use, but at the same time it felt a lot like and introduction and awakened a stronger hunger to keep learning and developing other projects.
+
 It was great to use some useful tools for the fist time like <b>Knex</b>, that offers such easy way to create database tables and connections using SQLite3, <b>Expo</b>, that greatly forments mobile development and testing, and <b>Insomnia</b>, that is a lot like Postman but proved to be as useful but feels more modern and smoother.
 
 The project is quite simple but an amazing journey through the market's most powerful stack that is fondly referred as Omnistack by Rocket Seat and it's team.
@@ -86,4 +88,4 @@ Enter the community: [He4rt Developers](https://discord.gg/8mA4CM2) and [Rockets
 
 ---
 
-<p align="center">Made with love ❤️ by <strong>[Marcos Garcia](https://github.com/yamgarcia)</p>
+<p align="center">Made with love ❤️ by </p>[Marcos Garcia](https://github.com/yamgarcia)
