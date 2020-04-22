@@ -60,7 +60,7 @@ The project is quite simple but an amazing journey through the market's most pow
  <img src="/screenshots/1200x900signin.jpg" width="450px;" alt="Web App Sign In Page"/>
  <img src="/screenshots/1200x900incidents.jpg" width="450px;" alt="Web App Incidents"/>
  <img src="screenshots/1200x900report.jpg" width="450px;" alt="Web App Report"/><br>
- <img src="/mobile/assets/icon.png" width="450px;" height="263px;" alt="Mobile App Splash"/>
+ <img src="/mobile/assets/icon.png" width="450px;" height="337.5px;" alt="Mobile App Splash"/>
  <img src="/screenshots/1200x900mobiledetails.jpg" width="450px;" alt="Mobile App Home Page"/>
  <img src="/screenshots/1200x900mobilehomepage.jpg" width="450px;" alt="Mobile App Details Page"/>
  <img src="/screenshots/1200x900Insomnia.jpg" width="450px;" alt="API"/>
@@ -86,4 +86,4 @@ Enter the community: [He4rt Developers](https://discord.gg/8mA4CM2) and [Rockets
 
 ---
 
-<p align="center">Made with love ❤️ por <strong>Marcos Garcia :wave: </p>
+<p align="center">Made with love ❤️ by <strong>[Marcos Garcia](https://github.com/yamgarcia)</p>
