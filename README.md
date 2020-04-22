@@ -57,14 +57,14 @@ The project is quite simple but an amazing journey through the market's most pow
 ![Mobile-details](/screenshots/1200x900mobilehomepage.jpg?raw=true "Mobile App Deatils Page")
 ![Insomnia](/screenshots/1200x900Insomnia.jpg?raw=true "API")
 
-<img src="/screenshots/1200x900homepage.jpg" width="100px;" alt="Web App Home Page"/>
-<img src="/screenshots/1200x900signin.jpg" width="100px;" alt="Web App Sign In Page"/>
-<img src="/screenshots/1200x900incidents.jpg" width="100px;" alt="Web App Incidents"/>
-<img src="screenshots/1200x900report.jpg" width="100px;" alt="Web App Report"/><br>
-<img src="/mobile/assets/splash.png" width="100px;" alt="Mobile App Splash"/>
-<img src="/screenshots/1200x900mobiledetails.jpg" width="100px;" alt="Mobile App Home Page"/>
-<img src="/screenshots/1200x900mobilehomepage.jpg" width="100px;" alt="Mobile App Details Page"/>
-<img src="/screenshots/1200x900Insomnia.jpg" width="100px;" alt="API"/>
+<img src="/screenshots/1200x900homepage.jpg" width="350px;" alt="Web App Home Page"/>
+<img src="/screenshots/1200x900signin.jpg" width="350px;" alt="Web App Sign In Page"/>
+<img src="/screenshots/1200x900incidents.jpg" width="350px;" alt="Web App Incidents"/>
+<img src="screenshots/1200x900report.jpg" width="350px;" alt="Web App Report"/><br>
+<img src="/mobile/assets/splash.png" width="350px;" height="auto;" alt="Mobile App Splash"/>
+<img src="/screenshots/1200x900mobiledetails.jpg" width="350px;" alt="Mobile App Home Page"/>
+<img src="/screenshots/1200x900mobilehomepage.jpg" width="350px;" alt="Mobile App Details Page"/>
+<img src="/screenshots/1200x900Insomnia.jpg" width="350px;" alt="API"/>
 
 - Fork this repository;
 - Create a branch with your feature: `git checkout -b my-feature`
