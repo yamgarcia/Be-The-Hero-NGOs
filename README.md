@@ -1,5 +1,5 @@
 <h4 align="center">
-<img src="./img/logo3x.png" width="250px" /><br>
+<img src="mobile/src/assets/logo@3x.png" width="250px" /><br>
  <b>Be a true hero helping NGOs' funding</b> 🦸‍♂️
 </h4>
 <p align="center">
@@ -61,7 +61,7 @@ The project is quite simple but an amazing journey through the market's most pow
 <img src="/screenshots/1200x900signin.jpg" width="350px;" alt="Web App Sign In Page"/>
 <img src="/screenshots/1200x900incidents.jpg" width="350px;" alt="Web App Incidents"/>
 <img src="screenshots/1200x900report.jpg" width="350px;" alt="Web App Report"/><br>
-<img src="/mobile/assets/splash.png" width="350px;" height="auto;" alt="Mobile App Splash"/>
+<img src="/mobile/assets/splash.png" width="350px;" height="263px;" alt="Mobile App Splash"/>
 <img src="/screenshots/1200x900mobiledetails.jpg" width="350px;" alt="Mobile App Home Page"/>
 <img src="/screenshots/1200x900mobilehomepage.jpg" width="350px;" alt="Mobile App Details Page"/>
 <img src="/screenshots/1200x900Insomnia.jpg" width="350px;" alt="API"/>
