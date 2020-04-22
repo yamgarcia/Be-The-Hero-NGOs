@@ -47,7 +47,7 @@ It was great to use some useful tools for the fist time like <b>Knex</b>, that o
 The project is quite simple but an amazing journey through the market's most powerful stack that is fondly referred as Omnistack by Rocket Seat and it's team.
 
 ### 🖼️ ScreenShots:
-
+<!––
 ![Web-home](/screenshots/1200x900homepage.jpg?raw=true "Web App Home Page")
 ![Web-signIn](/screenshots/1200x900signin.jpg?raw=true "Web App Sign In Page")
 ![Web-incidents](/screenshots/1200x900incidents.jpg?raw=true "Web App Incidents")
@@ -56,16 +56,19 @@ The project is quite simple but an amazing journey through the market's most pow
 ![Mobile-home](/screenshots/1200x900mobiledetails.jpg?raw=true "Mobile App Home Page")
 ![Mobile-details](/screenshots/1200x900mobilehomepage.jpg?raw=true "Mobile App Deatils Page")
 ![Insomnia](/screenshots/1200x900Insomnia.jpg?raw=true "API")
+-->
 
-<img src="/screenshots/1200x900homepage.jpg" width="350px;" alt="Web App Home Page"/>
-<img src="/screenshots/1200x900signin.jpg" width="350px;" alt="Web App Sign In Page"/>
-<img src="/screenshots/1200x900incidents.jpg" width="350px;" alt="Web App Incidents"/>
-<img src="screenshots/1200x900report.jpg" width="350px;" alt="Web App Report"/><br>
-<img src="/mobile/assets/splash.png" width="350px;" height="263px;" alt="Mobile App Splash"/>
-<img src="/screenshots/1200x900mobiledetails.jpg" width="350px;" alt="Mobile App Home Page"/>
-<img src="/screenshots/1200x900mobilehomepage.jpg" width="350px;" alt="Mobile App Details Page"/>
-<img src="/screenshots/1200x900Insomnia.jpg" width="350px;" alt="API"/>
-
+<div class="flex-container">
+ <img src="/screenshots/1200x900homepage.jpg" width="350px;" alt="Web App Home Page"/>
+ <img src="/screenshots/1200x900signin.jpg" width="350px;" alt="Web App Sign In Page"/>
+ <img src="/screenshots/1200x900incidents.jpg" width="350px;" alt="Web App Incidents"/>
+ <img src="screenshots/1200x900report.jpg" width="350px;" alt="Web App Report"/><br>
+ <img src="/mobile/assets/icon.png" width="350px;" height="263px;" alt="Mobile App Splash"/>
+ <img src="/screenshots/1200x900mobiledetails.jpg" width="350px;" alt="Mobile App Home Page"/>
+ <img src="/screenshots/1200x900mobilehomepage.jpg" width="350px;" alt="Mobile App Details Page"/>
+ <img src="/screenshots/1200x900Insomnia.jpg" width="350px;" alt="API"/>
+</div>
+ 
 - Fork this repository;
 - Create a branch with your feature: `git checkout -b my-feature`
 - Commit your changes: `git commit -m 'feat: My new feature'`
