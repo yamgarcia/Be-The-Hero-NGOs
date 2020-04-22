@@ -40,7 +40,8 @@ Non-governmental organizations (NGOs) are neither a part of a government nor a c
 ### 🙋🏽‍♂️ Author considerations
 
 The project was a great challange filled with the most current technologies in webdesign. For beign a whole fulltack project, despite the mobile section, the comcepts of backend and frontend integration, REST api, Database connection, among others had to be introduced. Thankfully the classes [COMP 2912 - Node.js](https://www.bcit.ca/study/courses/comp2912) and [COMP 1630 - Relational Database Design and SQL](https://www.bcit.ca/study/courses/comp1630) were permeated with knowledge and useful thoughts from experienced professionals.
-The use of react was also fairly important due it's demand nowadays, and the amount of tools that can be used with it. After finishing [COMP 2913 - React and Modern JavaScript](https://www.bcit.ca/study/courses/comp2913) at BCIT I was convinced that the future of frontend was in react, thanks to the usage that can be given the it and the ease of use, but at the same time it felt a lot like and introduction and awakened a stronger hunger to keep learning and developing other projects.
+The use of react was also fairly important due it's demand nowadays, and the amount of tools that can be used with it. 
+After finishing [COMP 2913 - React and Modern JavaScript](https://www.bcit.ca/study/courses/comp2913) at BCIT I was convinced that the future of frontend was in react, thanks to the usage that can be given the it and the ease of use, but at the same time it felt a lot like and introduction and awakened a stronger hunger to keep learning and developing other projects.
 It was great to use some useful tools for the fist time like <b>Knex</b>, that offers such easy way to create database tables and connections using SQLite3, <b>Expo</b>, that greatly forments mobile development and testing, and <b>Insomnia</b>, that is a lot like Postman but proved to be as useful but feels more modern and smoother.
 
 The project is quite simple but an amazing journey through the market's most powerful stack that is fondly referred as Omnistack by Rocket Seat and it's team.
@@ -51,9 +52,19 @@ The project is quite simple but an amazing journey through the market's most pow
 ![Web-signIn](/screenshots/1200x900signin.jpg?raw=true "Web App Sign In Page")
 ![Web-incidents](/screenshots/1200x900incidents.jpg?raw=true "Web App Incidents")
 ![Web-report](/screenshots/1200x900report.jpg?raw=true "Web App Report")
-![Insomnia](/screenshots/1200x900Insomnia?raw=true "API")
-![Mobile-home](/screenshots/1200x900mobiledetails?raw=true "Mobile App Home Page")
-![Mobile-deatils](/screenshots/1200x900mobilehomepage?raw=true "Mobile App Deatils Page")
+![Mobile-Splash](/mobile/assets/splash.png?raw=true "Mobile App Splash")
+![Mobile-home](/screenshots/1200x900mobiledetails.jpg?raw=true "Mobile App Home Page")
+![Mobile-details](/screenshots/1200x900mobilehomepage.jpg?raw=true "Mobile App Deatils Page")
+![Insomnia](/screenshots/1200x900Insomnia.jpg?raw=true "API")
+
+<img src="/screenshots/1200x900homepage.jpg" width="100px;" alt="Web App Home Page"/>
+<img src="/screenshots/1200x900signin.jpg" width="100px;" alt="Web App Sign In Page"/>
+<img src="/screenshots/1200x900incidents.jpg" width="100px;" alt="Web App Incidents"/>
+<img src="screenshots/1200x900report.jpg" width="100px;" alt="Web App Report"/><br>
+<img src="/mobile/assets/splash.png" width="100px;" alt="Mobile App Splash"/>
+<img src="/screenshots/1200x900mobiledetails.jpg" width="100px;" alt="Mobile App Home Page"/>
+<img src="/screenshots/1200x900mobilehomepage.jpg" width="100px;" alt="Mobile App Details Page"/>
+<img src="/screenshots/1200x900Insomnia.jpg" width="100px;" alt="API"/>
 
 - Fork this repository;
 - Create a branch with your feature: `git checkout -b my-feature`
