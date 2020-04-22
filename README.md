@@ -88,4 +88,4 @@ Enter the community: [He4rt Developers](https://discord.gg/8mA4CM2) and [Rockets
 
 ---
 
-<p align="center">Made with love ❤️ by </p>[Marcos Garcia](https://github.com/yamgarcia)
+<p align="center">Made with love ❤️ by <b><a src="https://github.com/yamgarcia">Marcos Garcia</a></b></p>
