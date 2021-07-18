@@ -9,7 +9,7 @@ import { FiLogIn } from "react-icons/fi";
 import api from "../../services/api";
 
 const Logon = () => {
-  const [id, setId] = useState("");
+  const [id, setId] = useState(window.localStorage.getItem("ID") || "");
   const history = useHistory();
 
   async function handlelogon(e) {
@@ -37,7 +37,7 @@ const Logon = () => {
             <h1>Logon</h1>
             <input
               value={id}
-              onChange={e => setId(e.target.value)}
+              onChange={(e) => setId(e.target.value)}
               placeholder='Your ID'
             />
             <button className='button' type='submit'>

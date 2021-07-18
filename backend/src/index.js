@@ -10,4 +10,8 @@ app.use(express.json()); //converts req body into json
 
 app.use(routes);
 
-app.listen(3333);
+const port = process.env.PORT || 3333;
+
+app.listen(port, () => {
+  console.log(`app listening on http://localhost:${port}`);
+});

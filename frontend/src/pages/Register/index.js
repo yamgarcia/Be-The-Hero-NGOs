@@ -6,6 +6,7 @@ import logoImg from "../../assets/logo.svg";
 import { FiArrowLeft } from "react-icons/fi";
 //api
 import api from "../../services/api";
+const mystorage = window.localStorage;
 
 const Register = () => {
   const [name, setName] = useState("");
@@ -26,12 +27,17 @@ const Register = () => {
       email,
       whatsapp,
       city,
-      state
+      state,
     };
 
     try {
       console.log(data);
       const res = await api.post("/ngos", data);
+
+      if (!mystorage.getItem("ID")) {
+        mystorage.setItem("ID", res.data.id);
+      }
+
       alert(`Your ID access: ${res.data.id}`);
 
       history.push("/");
@@ -56,30 +62,30 @@ const Register = () => {
         <form onSubmit={handleRegister}>
           <input
             value={name}
-            onChange={e => setName(e.target.value)}
+            onChange={(e) => setName(e.target.value)}
             placeholder="NGO's name"
           />
           <input
             value={email}
-            onChange={e => setEmail(e.target.value)}
+            onChange={(e) => setEmail(e.target.value)}
             type='email'
             placeholder='E-mail'
           />
           <input
             value={whatsapp}
-            onChange={e => setWhatsapp(e.target.value)}
+            onChange={(e) => setWhatsapp(e.target.value)}
             placeholder='WhatsApp'
           />
 
           <div className='input-group'>
             <input
               value={city}
-              onChange={e => setCity(e.target.value)}
+              onChange={(e) => setCity(e.target.value)}
               placeholder='City'
             />
             <input
               value={state}
-              onChange={e => setState(e.target.value)}
+              onChange={(e) => setState(e.target.value)}
               placeholder='State'
               style={{ width: 180 }}
             />
